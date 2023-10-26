@@ -1,0 +1,134 @@
+:root {
+  --grass: #63BC5A;
+  --fire: #FF9D55;
+  --water: #5090D6;
+  --bug: #91C12F;
+  --normal: #919AA2;
+  --flying: #89AAE3;
+  --poison: #B567CE;
+  --electric: #F4D23C;
+  --ground: #D97845;
+  --fairy: #EC8FE6;
+  --fighting: #CE416B;
+  --psychic: #FA7179;
+  --rock: #C5B78C;
+  --ghost: #5269AD;
+  --ice: #73CEC0;
+  --dragon: #0B6DC3;
+  --dark: #5A5465;
+  --steel: #5A8EA2;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 300px;
+  height: 600px;
+  margin: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: white;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  transform: translate3D(0,-1px,0) scale(1.05)
+}
+.card .card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 50% 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  z-index: -1;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.card .card-header img {
+  width: 50%;
+  height: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+  border-radius: 50%;
+}
+
+.card .type-text {
+  display: flex;
+  justify-content: space-evenly;  
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize; 
+
+  margin-left: 1.5rem;
+}
+
+.card .type-text p {
+  border-radius: 1rem;
+  width: 80px;
+  margin: .5rem;
+}
+
+.card .desc {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  color: black;
+}
+
+.card .desc .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .desc .container p {
+  color: rgba(0, 0, 0, 0.645);
+}
+.card .desc .container .data {
+  font-weight: 600;
+  width: 75px;
+  text-align: center;
+  border: .1px solid rgba(0, 0, 0, 0.250);
+  border-radius: 10px;
+}
+
+.card .stats {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+.card .stats .container {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: .5rem;
+  font-weight: 700;
+}
+
+
+.card .stats .container .stat-value {
+  text-align: center;
+  padding: .1rem;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: .5rem;
+}
