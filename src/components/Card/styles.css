@@ -23,6 +23,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  transition: .5s;
 }
 
 .card {
@@ -41,7 +42,7 @@
 }
 
 .card:hover {
-  transform: translate3D(0,-1px,0) scale(1.05)
+  transform: translate3D(0,-1px,0) scale(1.05);
 }
 .card .card-header {
   display: flex;
