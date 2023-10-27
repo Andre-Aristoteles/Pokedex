@@ -1,1 +1,20 @@
+#gif {
+    width: 100dvw;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button {
+    width: 35px;
+    height: 20px;
+    margin: .5rem;
+}
