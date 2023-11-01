@@ -22,7 +22,7 @@ export default function Card({ pokemon }) {
         onMouseLeave={handleMouseLeave}
         style={{background: `var(--${pokemon.types[0].type.name})`}}
       >
-        <h1>{pokemon.name}</h1>
+        <h1>{pokemon.name.replace('-', ' ')}</h1>
         <img src={image} alt={pokemon.name} />
       </div>
       
@@ -68,13 +68,13 @@ export default function Card({ pokemon }) {
           </div>
           <div className="container">
 
-            <p style={{color: 'orange'}}><Fire size={20} />{pokemon.stats[3].stat.name}</p>
+            <p style={{color: 'orange'}}><Fire size={20} />{pokemon.stats[3].stat.name.replace('-', ' ')}</p>
             <p style={{color: 'orange'}} className='stat-value'>{pokemon.stats[3].base_stat}</p>  
             
           </div>
           <div className="container">
 
-            <p style={{color: '#C5B78C'}}><ShieldStar size={20} />{pokemon.stats[4].stat.name}</p>
+            <p style={{color: '#C5B78C'}}><ShieldStar size={20} />{pokemon.stats[4].stat.name.replace('-', ' ')}</p>
             <p style={{color: '#C5B78C'}} className='stat-value'>{pokemon.stats[4].base_stat}</p>  
             
           </div>

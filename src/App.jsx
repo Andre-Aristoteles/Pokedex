@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Card from './components/Card'
 
-const PAGE_SIZE = 72;
+const PAGE_SIZE = 64;
 
 async function getPokemon({page, pageSize}) {
 
